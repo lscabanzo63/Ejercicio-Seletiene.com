@@ -14,5 +14,61 @@ public class EnvioMismoDia implements TipoEnvio {
     public void enviar() {
         
     }
+    private String correo;
+    private String Nombres;
+    private String Apellidos;
+    private int numerocel;
+    private String direccion;
+
+    public EnvioMismoDia(String correo, String Nombres, String Apellidos, int numerocel, String direccion) {
+        this.correo = correo;
+        this.Nombres = Nombres;
+        this.Apellidos = Apellidos;
+        this.numerocel = numerocel;
+        this.direccion = direccion;
+    }
+
+
+
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getNombres() {
+        return Nombres;
+    }
+
+    public void setNombres(String Nombres) {
+        this.Nombres = Nombres;
+    }
+
+    public String getApellidos() {
+        return Apellidos;
+    }
+
+    public void setApellidos(String Apellidos) {
+        this.Apellidos = Apellidos;
+    }
+
+    public int getNumerocel() {
+        return numerocel;
+    }
+
+    public void setNumerocel(int numerocel) {
+        this.numerocel = numerocel;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
     
 }
